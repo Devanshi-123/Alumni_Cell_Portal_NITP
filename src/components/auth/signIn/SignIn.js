@@ -19,10 +19,12 @@ function SignIn() {
 
     return (
         <div className='signIn'>
-            <h1>Sign in to your account</h1>
-            <input type='text' placeholder='Enter your email' value={email} onChange={e => setEmail(e.currentTarget.value)} />
-            <input type='password' placeholder='Enter your password' value={password} onChange={e => setPassword(e.currentTarget.value)} />
-            <button onClick={signIn}>Sign In</button>
+        <h2>Welcome Back !</h2>
+            <p >Log in to your account</p>
+            <input type='text' placeholder='Email Address' value={email} onChange={e => setEmail(e.currentTarget.value)} />
+            <input type='password' placeholder='Password' value={password} onChange={e => setPassword(e.currentTarget.value)} />
+            <button  onClick={signIn}>Sign In</button>
+            <a href="#">Forgot Password ?</a>
         </div>
     )
 }

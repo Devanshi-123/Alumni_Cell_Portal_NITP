@@ -1,0 +1,43 @@
+
+.yellow-box {
+    background-color: #F5B50E;
+  }
+  .orange-box {
+    background-color: #F9531E;
+  }
+  .black-box {
+    background-color: #000000;
+  }
+  .thick{
+      
+      font-weight: bold;
+  }
+  .thicker{
+      margin-top: 1.5rem;
+      margin-bottom:0%;
+      
+      font-weight: bolder;
+  }
+
+  
+  .cell{
+      color: #F9531E;
+  }
+  
+  .box {
+    height: 100px;
+    
+    color: white;
+    
+   
+    
+  }
+  .box a{
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 30%;
+  
+    
+  }
+  
