@@ -18,9 +18,14 @@ function SignUp() {
     }
     return (
         <div className='signUp'>
-            <h1>Register your account</h1>
-            <input type='text' placeholder='Enter your email' onChange={e => setEmail(e.currentTarget.value)} />
-            <input type='password' placeholder='Enter your password' onChange={e => setPassword(e.currentTarget.value)} />
+        <h2>Create your Account</h2>
+            <p>Connect with your NITP family</p>
+            <input type="text" placeholder='Name' />
+            <input type="text" placeholder='Year of passing' />
+
+            <input type='email' placeholder='Email Address' onChange={e => setEmail(e.currentTarget.value)} />
+            <input type='password' placeholder='Password' onChange={e => setPassword(e.currentTarget.value)} />
+            <input type="password" placeholder='Confirm password' />
             <button onClick={signUp}>Sign Up</button>
         </div>
     )

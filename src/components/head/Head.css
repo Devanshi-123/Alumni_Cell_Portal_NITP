@@ -1,0 +1,22 @@
+.head-div{
+    margin-top: 1em;
+}
+.head-colorbox{
+    width: 10px;
+    height:100px;
+    margin-left: 10%;
+    background-color:  #F9531E;
+    display: inline-block;
+    float:left;
+}
+.make-inline{
+    display: inline-block;
+    height:100px;
+    float:left;
+}
+.head-title{
+    padding-left: 15px;
+    font-weight: bold;
+    
+    width: fit-content;
+}
