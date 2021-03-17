@@ -1,40 +1,46 @@
 import React from 'react'
 import Footer from '../components/footer'
 import Icon from '../components/icons'
+import {FaTwitter} from "react-icons/fa"
+import {FaFacebook} from "react-icons/fa"
+import {FaInstagram} from "react-icons/fa"
+import {FaYoutube} from "react-icons/fa"
+import {FaGoogle} from "react-icons/fa"
+import logo from '../assets/logo.png';
+
+
 
 export function FooterContainer() {
     return (
-        <Footer>
-            <Footer.Wrapper>
-            <Footer.Row>
-                <Footer.Column>
-                <Footer.Title>About Us</Footer.Title>
-                    <Footer.Link href="#">Story</Footer.Link>
-                    <Footer.Link href="#">Clients</Footer.Link>
-                    <Footer.Link href="#">Testimonials</Footer.Link>
-                </Footer.Column>
-                <Footer.Column>
-                <Footer.Title>Services</Footer.Title>
-                    <Footer.Link href="#">Marketing</Footer.Link>
-                    <Footer.Link href="#">Consulting</Footer.Link>
-                    <Footer.Link href="#">Development</Footer.Link>
-                    <Footer.Link href="#">Design</Footer.Link>
-                </Footer.Column>
-                <Footer.Column>
+        <Footer>                
+        <div style={{float:"right"}} >
+            <img   src={logo} alt="Logo" /> 
+        </div>
+        <Footer.Wrapper>
+     <Footer.Row>
+
+          <Footer.Column>
+             <Footer.Title>Follow Us</Footer.Title>
+                <div style={{ borderTop: "5px solid #000000 "}}></div>
+                
+                   <br></br>
+                    <Footer.Link href="#"><Icon className="fab fa-facebook-f" /> <FaFacebook/> Facebook</Footer.Link>
+                    <Footer.Link href="#"><Icon className="fab fa-instagram" /> <FaInstagram /> Instagram</Footer.Link>
+                    <Footer.Link href="#"><Icon className="fab fa-youtube" /> <FaYoutube/> Youtube</Footer.Link>
+                    <Footer.Link href="#"><Icon className="fab fa-twitter" /> <FaTwitter /> Twitter</Footer.Link>
+
                 <Footer.Title>Contact Us</Footer.Title>
-                    <Footer.Link href="#">United States</Footer.Link>
-                    <Footer.Link href="#">United Kingdom</Footer.Link>
-                    <Footer.Link href="#">Australia</Footer.Link>
-                    <Footer.Link href="#">Support</Footer.Link>
-                </Footer.Column>
-                <Footer.Column>
-                <Footer.Title>Social</Footer.Title>
-                    <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
-                    <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
-                    <Footer.Link href="#"><Icon className="fab fa-youtube" />Youtube</Footer.Link>
-                    <Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
+                    <div style={{ borderTop: "5px solid #000000 "}}></div>
+                
+                <br></br>
+                <Footer.Link href="#"> <FaGoogle />   falanadimkana@gmail.com</Footer.Link>
+
+                
                 </Footer.Column>
             </Footer.Row>
+           
+                
+            
             </Footer.Wrapper>
         </Footer>
     )
