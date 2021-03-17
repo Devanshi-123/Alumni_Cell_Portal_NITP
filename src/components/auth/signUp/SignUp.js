@@ -21,7 +21,7 @@ function SignUp() {
         <h2>Create your Account</h2>
             <p>Connect with your NITP family</p>
             <input type="text" placeholder='Name' />
-            <input type="text" placeholder='Year of passing' />
+           
 
             <input type='email' placeholder='Email Address' onChange={e => setEmail(e.currentTarget.value)} />
             <input type='password' placeholder='Password' onChange={e => setPassword(e.currentTarget.value)} />

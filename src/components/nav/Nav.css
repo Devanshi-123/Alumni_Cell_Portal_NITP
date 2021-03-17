@@ -6,7 +6,11 @@
     background-color: #F9531E;
   }
   .black-box {
+    
     background-color: #000000;
+  }
+  .col-6{
+    left: 5%;
   }
   .thick{
       
@@ -26,7 +30,7 @@
   
   .box {
     height: 100px;
-    
+    right:5%;
     color: white;
     
    
