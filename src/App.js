@@ -13,18 +13,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-  
-      <Router>
-        <Switch>
-
-=======
     <Nav />
     
       <Router>
         <Switch>
         
->>>>>>> 425966c7d61d747385f5f3276d8272c87e9ff65d
           <Route path='/auth' component={Auth} />
                   <Route path='/main' component={Main} />
                   <Route path='/about' component={About} />
