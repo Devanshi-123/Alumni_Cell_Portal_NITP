@@ -1,0 +1,17 @@
+/* Primary colors */
+$color_1: #F9531E;
+$color_2: #F5B50E;
+$color_3: #000000;
+$color_4: #FFFBFB;
+$color_5: #626262;
+
+@mixin dimension($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
