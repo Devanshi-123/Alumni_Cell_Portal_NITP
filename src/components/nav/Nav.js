@@ -2,7 +2,7 @@ import React from "react";
 import "./Nav.css"
 
 function Nav() {
-    return (<div className="container">
+    return (<div className="container-fluid">
         <div className="row">
             <div className="col-6">
                 <h1 className="thicker">ALUMNI <span className="cell">CELL</span></h1>
