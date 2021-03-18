@@ -1,0 +1,50 @@
+@import "../../globals";
+
+.event-in-focus {
+    @include dimension(100%, 100%);
+
+    .event-poster {
+        @include dimension(35%, 100%);
+        float: left;
+        background-color: $color_5;
+
+        img {
+            @include dimension(100%, 100%);
+        }
+    }
+
+    .event-info {
+        @include dimension(65%, 100%);
+        float: right;
+
+        font-family: 'DM Sans', sans-serif;
+
+        .event-title {
+            padding: 0 1vw;
+            font-weight: bold;
+            font-size: 3.6em;
+        }
+
+        .event-calendar {
+            @extend .event-title;
+            font-weight: 300;
+            font-size: 2.4em;
+        }
+
+        .event-time {
+            @extend .event-calendar;            
+            font-size: 1.8em;
+        }
+
+        .event-description {
+            @extend .event-calendar;
+            font-size: 1.6em;
+        }
+    }
+}
+
+.clear-float {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}

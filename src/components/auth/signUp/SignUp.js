@@ -18,11 +18,9 @@ function SignUp() {
     }
     return (
         <div className='signUp'>
-        <h2>Create your Account</h2>
+            <h2>Create your Account</h2>
             <p>Connect with your NITP family</p>
             <input type="text" placeholder='Name' />
-           
-
             <input type='email' placeholder='Email Address' onChange={e => setEmail(e.currentTarget.value)} />
             <input type='password' placeholder='Password' onChange={e => setPassword(e.currentTarget.value)} />
             <input type="password" placeholder='Confirm password' />
