@@ -6,6 +6,10 @@ import About from './components/about-us/about';
 import Event from './components/event/Event';
 import Nav from "./components/nav/Nav";
 import './App.css';
+ import  { FooterContainer }from './containers/footer';
+
+
+
 
 function App() {
   return (
@@ -19,8 +23,12 @@ function App() {
           <Route path='/about' component={About} />
           <Route path='/event' component={Event} />
           <Redirect to='/auth' from='*' />
+          
         </Switch>
+       
       </Router>
+
+      <FooterContainer/>
     </div>
   );
 }
