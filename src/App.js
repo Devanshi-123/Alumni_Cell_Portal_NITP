@@ -7,7 +7,7 @@ import Story from './components/stories/Story';
 import Event from './components/event/Event';
 import Nav from "./components/nav/Nav";
 import './App.css';
-
+import Footer from "./components/footer/Footer" ;
  
 
 
@@ -32,7 +32,7 @@ function App() {
        
       </Router>
 
-      
+  <Footer/>
     </div>
   );
 }
