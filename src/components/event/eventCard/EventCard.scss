@@ -1,0 +1,68 @@
+@import "../../globals";
+
+.info {
+    cursor: pointer;
+
+    .calendar {
+        @include dimension(8vw, 8vw);
+        margin: 1em 0em;
+        background-color: $color_1;
+        color: $color_3;
+        float: left;
+        
+        .date {
+            @include dimension(55%, 100%);
+            float: left;
+            font: {
+                size: 3.6em;
+                weight: 900;
+            }
+            /* Center Horizontally & Vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .month {
+            @include dimension(45%, 100%);
+            float: right;
+            font: {
+                size: 1.8em;
+                weight: 600;
+            }
+            /* Center Horizontally & Vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .additional-detail {
+        @include dimension(calc(100% - 8vw), 8vw);
+        margin: 1em 0;
+        padding: 0em 0.25em;
+        float: right;
+        background-color: $color_4;
+        color: $color_5;
+
+        .title {
+            @include dimension(100%, 2vw);
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .description {
+            @include dimension(100%, 5.4vw);
+            // padding: 0em 0.25em;
+            font-size: 1.2em;
+            line-height: 1.3em;
+            overflow: hidden;
+        }
+    }
+}
+
+.clear-float {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
