@@ -22,7 +22,6 @@ function App() {
         <Switch>
           <Route path='/auth' component={Auth} />
                   <Route path='/main' component={Main} />
-                  <Route path='/about' component={About} />
                   <Route path='/stories' component={Story} />
           <Route path='/main' component={Main} />
           <Route path='/about' component={About} />
