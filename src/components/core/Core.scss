@@ -1,0 +1,50 @@
+@import "../globals";
+
+.core {
+    /* Resets the font-size to 10px to round off the default font-size for simple px to em conversion */
+    font-size: 10px;
+
+    @include dimension(63%, 40%);
+    margin: 2% 17%;
+    padding: 1.5em;
+
+    .core-message {
+        font-size: 2.8em;
+        font-weight: 300;
+
+        .first-letter {
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+    }    
+}
+
+.tag-background {
+    /* Resets the font-size to 10px to round off the default font-size for simple px to em conversion */
+    font-size: 10px;
+
+    background-color: $color_1;
+    @include dimension(24%, 7%);
+    margin: 0% 5%;
+
+    .tagline {
+        @include dimension(100%, 100%);
+        padding: 0% 10%;
+
+        /* Center Horizontally & Vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: $color_3;
+        font-size: 2.4em;
+        font-weight: 800;
+        font-family: 'DM Sans', sans-serif;
+    }
+}  
+
+.clear-float-both {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}

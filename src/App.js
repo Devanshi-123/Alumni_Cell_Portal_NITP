@@ -5,6 +5,7 @@ import Main from './components/main/Main';
 import About from './components/about-us/about';
 import Story from './components/stories/Story';
 import Event from './components/event/Event';
+import Core from './components/core/Core';
 import Nav from "./components/nav/Nav";
 import './App.css';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/main' component={Main} />
           <Route path='/about' component={About} />
           <Route path='/event' component={Event} />
+          <Route path='/core' component={Core} />
           <Redirect to='/auth' from='*' />
           
         </Switch>
