@@ -1,12 +1,15 @@
 import "./Story.css";
 import React from "react";
 import Head from '../head/Head';
+
 function Story() {
   return (
+    <div>
+    
      <div>
-     <Head 
+           <Head 
          title="STORIES"
-     />
+           />
       <div>
      
        <div className="App-left">
@@ -31,9 +34,15 @@ function Story() {
            
          </p>
        </div>
-     </div></div> 
+      </div>
+      </div> 
+    
+
+     </div> 
+
    
   );
+  
 }
 
 export default Story;
