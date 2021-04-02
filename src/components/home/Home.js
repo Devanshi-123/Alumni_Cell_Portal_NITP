@@ -7,11 +7,13 @@ import Cards from "./cards";
 
 import './home.scss';
 import {TextField} from '@material-ui/core'
+import  LandingPage  from "./LandingPage/index";
 function Home() {
     return (
         <>
          <Head title="LETS CONNECT" />
-         <CarouselContainer/>
+         <LandingPage/>
+         {/* <CarouselContainer/> */}
          <br/>
          <Cards/>
          <br/>
