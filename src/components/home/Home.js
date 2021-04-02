@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from "../head/Head";
-import './C.jsx';
+// import './C.jsx';
 import CarouselContainer from "./C";
 import Footer from "../footer/Footer";
 import Cards from "./cards";
@@ -13,7 +13,7 @@ function Home() {
         <>
          <Head title="LETS CONNECT" />
          <LandingPage/>
-         {/* <CarouselContainer/> */}
+         <CarouselContainer/>
          <br/>
          <Cards/>
          <br/>
