@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "./Nav.css"
 
 function Nav() {
@@ -9,13 +10,13 @@ function Nav() {
                 <p className="thick">National Institute Of Technology Patna</p>
             </div>
             <div className="col-2 orange-box box ">
-                <a href="#">Menu</a>
+                <Link to="/event">Menu</Link>
             </div>
             <div className="col-2 yellow-box box">
-                <a href="#">Register</a>
+                <Link to="/auth">Register</Link>
             </div>
             <div className="col-2 black-box box">
-                <a href="#">Contact Us</a>
+                <Link to="/core">Contact Us</Link>
             </div>
 
         </div>
