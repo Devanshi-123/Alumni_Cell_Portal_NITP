@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from "../head/Head";
 import CarouselContainer from "./C";
-import Footer from "../footer/Footer";
 import Cards from "./cards";
 import App1 from "./newsletter/App1";
 import './home.scss';
@@ -18,7 +17,6 @@ function Home() {
       <Cards />
       <App2 />
       <App1 />
-      <Footer />
     </>
   );
 }
