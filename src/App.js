@@ -5,10 +5,10 @@ import Main from './components/main/Main';
 import About from './components/about-us/about';
 import Story from './components/stories/Story';
 import Event from './components/event/Event';
+import Core from './components/core/Core';
+import Home from './components/home/Home';
 import Nav from "./components/nav/Nav";
 import './App.css';
-
- 
 
 
 
@@ -22,18 +22,19 @@ function App() {
         <Switch>
           <Route path='/auth' component={Auth} />
                   <Route path='/main' component={Main} />
-                  <Route path='/about' component={About} />
                   <Route path='/stories' component={Story} />
           <Route path='/main' component={Main} />
           <Route path='/about' component={About} />
           <Route path='/event' component={Event} />
+          <Route path='/core' component={Core} />
+          <Route path='/home' component={Home} />
           <Redirect to='/auth' from='*' />
           
         </Switch>
        
       </Router>
 
-      
+
     </div>
   );
 }
