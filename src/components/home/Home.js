@@ -5,7 +5,7 @@ import Footer from "../footer/Footer";
 import Cards from "./cards";
 import App1 from "./newsletter/App1";
 import './home.scss';
-import { TextField } from '@material-ui/core'
+import { TextField } from '@material-ui/core';
 import LandingPage from "./LandingPage/index";
 import App2 from "./MailUs/App2";
 function Home() {
