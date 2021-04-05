@@ -1,0 +1,196 @@
+@import "../../globals";
+
+/* Clear float */
+.head-div::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#new-event {
+    #frame {
+        min-width: 350px;
+        max-width: 70%;
+        margin: 2.5% auto;
+        padding: 10px;
+
+        .frame__header {
+            background-color: $color_3;
+            text-align: center;
+            padding: 10px;
+
+            span {
+                color: $color_0;
+                text-transform: capitalize;
+                font-size: 18px;
+            }
+        }
+
+        .new-event-form {
+
+            .form__details {
+
+                .form__container-item {
+                    margin-bottom: 16px;
+                    
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 700;
+                        background: $color_4;
+                        padding: 10px;
+                        cursor: default;
+                    }
+
+                    .container__form-fields {
+                        padding: 5px;
+
+                        .form-field {
+                            padding: 10px 5px;
+
+                            .label {
+                                font-weight: 400;
+                                font-size: 14px;
+                                cursor: pointer;
+
+                                span.title-head {
+                                    color: $color_3;
+                                }
+                            
+                                span.title-tail {
+                                    color: $color_5;
+                                }
+
+                                span.label-checkbox {
+                                    padding-left: 5px;
+                                }
+                            }
+
+                            div {                                        
+                                span.character-count {
+                                    font-size: 12px;
+                                    color: $color_5;
+                                }
+                                input, select, #description-short, #description-long {
+                                    padding: 8px 16px;
+                                    border: 1px solid $color_1;
+                                }
+                                input[type="text"], input[type="url"] {
+                                    width: 100%;
+                                }
+                                #description-short, #description-long {
+                                    width: 100%;
+                                    height: 100px;
+                                    resize: vertical;
+                                }
+                                
+                                .btn-container {
+
+                                    #event-banner, #event-thumbnail {
+                                        height: 49px;
+                                        width: 70%;
+                                        background-color: $color_4;
+                                        border: 0;
+                                    }
+                                    .upload-btn {
+                                        border: inherit;
+                                        cursor: pointer;
+                                        padding: 5px;
+                                        border: none;
+                                        width: 30%;
+                                        height: 49px;
+                                        font-size: 10px;
+                                        font-weight: 600;
+                                        color: $color_0;
+                                        background: $color_3;
+                                        cursor: pointer;
+                                        text-transform: uppercase;
+                                    }
+                                }
+
+                                .image-description {
+                                    font-size: 12px;
+                                }
+
+                                .date {
+                                    width: auto;
+                                    padding: 8px 8px 8px 24px;
+                                    border-right-width: 0px;
+                                    cursor: pointer;
+                                }
+                                .time {
+                                    width: auto;
+                                    padding: 8px;
+                                    border-left-width: 0px;
+                                    cursor: pointer;
+                                }
+                                #timezone-offset {
+                                    width: 100%;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                ::placeholder {
+                    font-size: 14px;
+                }
+            }
+
+            .form__nav-bottom {
+                background: $color_3;
+                text-align: right;
+                padding: 0 30px;
+
+                .btn {
+                    background: inherit;
+                    border: none;
+                    padding: 15px;
+                    cursor: pointer;
+                }
+
+                .btn-label {
+                    color: $color_0;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #new-event .new-event-form .form__nav-bottom{
+        text-align: center !important;
+        padding: 0 90px !important;
+    } 
+
+    .form__container-item .container__form-fields div {
+
+        .btn-container {
+            #event-banner, #event-thumbnail {
+                width: 100% !important;
+            }
+            .upload-btn {
+                width: 100% !important;
+                height: 25px !important;
+            }
+        }
+        .image-description {
+            font-size: 10px !important;
+        }
+    }
+
+    .date {
+        width: 60% !important;
+    }
+    .time {
+        width: 40% !important;
+    }
+}
