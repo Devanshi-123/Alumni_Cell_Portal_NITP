@@ -12,7 +12,12 @@ function Home() {
     <>
       <Head title="LETS CONNECT" />
       {/* <LandingPage /> */}
-      <CarouselContainer />
+      <table>
+      <tr>
+  <td>  <CarouselContainer /></td>
+    <td> <text className="carouselText">WE CARRY <span style={{color:"#F9531E"}}>TRADITION</span></text> </td>
+    </tr>
+    </table>
       <br />
       <Cards />
       <App2 />
