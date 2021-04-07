@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-body {
+.app2 {
   background-color: rgb(248, 246, 253);
 }
 
-body,
+.app2,
 input,
 textarea,
 button {

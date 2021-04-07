@@ -1,3 +1,25 @@
+/* LOGO */
+.logo {
+  left: 5%;
+}
+.logo a:link {
+  text-decoration: none;
+}
+.thicker {
+  margin-top: 1.5rem;
+  margin-bottom: 0%;
+  color:#000000;
+  font-weight: bolder;
+}
+.cell {
+  color: #f9531e;
+}
+.thick {
+  color:#000000;
+  font-weight: bold;
+}
+
+/* NAVBAR */
 .yellow-box {
   background-color: #f5b50e;
 }
@@ -7,43 +29,37 @@
 .black-box {
   background-color: #000000;
 }
-.logo {
-  left: 5%;
-}
-.thick {
-  font-weight: bold;
-}
-.thicker {
-  margin-top: 1.5rem;
-  margin-bottom: 0%;
-
-  font-weight: bolder;
-}
-
-.cell {
-  color: #f9531e;
-}
-
 .box {
+  color: white;
   height: 100px;
-  right: 5%;
+  padding: 0 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item {
   color: white;
 }
-.box a {
-  color: white;
-  position: absolute;
-  top: 40%;
-  left: 30%;
+.item:hover {
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
+/* DROPDOWN MENU */
+nav  {
+    padding: 0 !important;
+}
+#navbarDropdownMenuLink {
+  padding: 0 !important;
+}
+#navbarDropdownMenuLink::after {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
   .box{
-    right: 0%;
-  }
-  .orange-box {
-    left: 1%;
-  }
-  .black-box {
-    right: 1%;
+    height: 60px;
   }
 }
