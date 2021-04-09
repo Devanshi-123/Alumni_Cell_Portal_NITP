@@ -8,11 +8,12 @@ import image3 from '../../assets/3.jpg';
 
 const CarouselContainer = () => {
   return (
-    <center>
-      <Carousel fade={true} pause={false}>
+
+      <Carousel fade={true} pause={false}
+      style = {{height:"80vh",width:"60vh",margin:"10vh"}}>
       <Carousel.Item interval={3000} className="car">
         <img
-          style = {{height:"80vh"}}
+          style = {{height:"80vh",width:"60vh",margin:"10vh"}}
           src={image1}
           alt="First slide"
           className="d-block img-fluid"
@@ -20,23 +21,23 @@ const CarouselContainer = () => {
       </Carousel.Item>
       <Carousel.Item interval={3000}>
         <img
-          style = {{height:"80vh"}}
+          style = {{height:"80vh",width:"60vh",margin:"10vh"}}
           src={image2}
-          alt="Third slide"
+          alt="Second slide"
           className="d-block img-fluid"
         />
       </Carousel.Item>
       <Carousel.Item interval={3000}>
         <img
-          style = {{height:"80vh"}}
+          style = {{height:"80vh",width:"60vh",margin:"10vh"}}
           src={image3}
           alt="Third slide"
           className="d-block img-fluid"
         />
       </Carousel.Item>
-    
+
     </Carousel>
-    </center>
+
   )
 }
 
