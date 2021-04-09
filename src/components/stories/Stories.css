@@ -1,0 +1,12 @@
+.stories {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (max-width: 767px) {
+  .stories {
+    flex-direction: column;
+  }
+}

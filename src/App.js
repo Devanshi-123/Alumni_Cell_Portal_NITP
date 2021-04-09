@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Auth from './components/auth/Auth';
 import Main from './components/main/Main';
 import About from './components/about-us/about';
-import Story from './components/stories/Story';
+import Stories from './components/stories/Stories';
 import Footer from "./components/footer/Footer";
 import Event from './components/event/Event';
 import NewEvent from './components/event/newEvent/NewEvent';
@@ -24,7 +24,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/auth' exact component={Auth} />
           <Route path='/main' component={Main} />
-          <Route path='/stories' component={Story} />
+          <Route path='/stories' component={Stories} />
           <Route path='/about' component={About} />
           <Route path='/core' component={Core} />
           <Route path='/event/new' component={NewEvent} />
