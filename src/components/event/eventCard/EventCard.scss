@@ -40,24 +40,12 @@
             font-size: 1.8em;
             font-weight: 700;
             padding-top: 0.25em;
+            text-transform: uppercase;
         }
         p {
             font-size: 1.2em;
             line-height: 1.3em;
             padding: 0.25em 0;
-        }
-    }
-}
-
-/* Media Queries */
-@media only screen and (min-width: 768px) {
-    #card {
-        #calendar {
-            div {
-                p {
-                    font-size: 1.8em;
-                }
-            }
         }
     }
 }
