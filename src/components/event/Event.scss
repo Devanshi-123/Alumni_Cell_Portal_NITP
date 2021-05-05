@@ -1,40 +1,45 @@
 @import "../globals";
 
-.clear-float {
-    clear: left;
-    visibility: hidden;
-    height: 0;
-}
-
-.event {
+#event {
     /* Resets the font-size to 10px to round off the default font-size for simple px to em conversion */
     font-size: 10px;
 
-    .all-events {
-        @include dimension(calc(43510%/1349 - 10%), 57.35vh);
-        margin-right: calc(10450%/1349);
-        float: right;
-        
-        .header-block {
-            height: 50px;
+    margin: 5%;
+    grid-template-rows: 1fr;
+
+    #event-focused {
+        padding: 10%;
+    }
+    #event-all {
+        h2 {
             background-color: $color_3;
             color: $color_4;
             font-size: 2.7em;
+            padding: 0.325926em 0;
+            text-transform: uppercase;
 
             /* Center Horizontally & Vertically */
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
-        .event-cards {
-            overflow: hidden;
+        div {
+            grid-template-rows: repeat (4, 1fr);
         }
     }
+}
 
-    .event-selected {
-        @include dimension(40%, 40.75vh);
-        margin-left: calc(10% + 5%);
-        margin-top: 2%;
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    #event {
+        margin: 0 5%;
+        grid-template-columns: 2.25fr 1fr;
+
+        #event-focused {
+            padding: 1% 10%;
+        }
+        #event-all {
+            padding: 2%;
+        }
     }
 }
