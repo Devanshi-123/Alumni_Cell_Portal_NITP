@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Head from "../head/Head";
 import EventCard from './eventCard/EventCard';
 import EventInFocus from './eventInFocus/EventInFocus';
@@ -40,6 +41,12 @@ function Event() {
                                 );
                             })
                         }
+                        <div id="add-event-btn">
+                            <Link to="/event/new"><div>
+                                <i className="fa fa-plus" ariaHidden="true"></i>
+                                <p>Add Event</p></div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
