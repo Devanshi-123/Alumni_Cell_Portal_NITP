@@ -16,3 +16,16 @@ $color_5: #626262;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Utilities */
+.grid {
+    display: grid;
+}
+.flex {
+    display: flex;
+}
+
+/* Clearing BootStrap Defaults */
+h2, h3, p {
+    margin-bottom: 0 !important;
+}

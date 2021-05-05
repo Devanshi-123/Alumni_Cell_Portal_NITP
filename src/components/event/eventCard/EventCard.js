@@ -3,24 +3,19 @@ import './EventCard.scss';
 
 function EventCard(props) {
     return (
-        <div className="info">
-
-            <div className="calendar">
-                <p className="date">{props.date}</p>
-                <div className="month">
-                    <p>{props.month}<br />{props.year}</p>
+        <div id="card" className="grid">
+            <div id="calendar" className="grid">
+                <p>{props.date}</p>
+                <div>
+                    <p>{props.month}</p>
+                    <p>{props.year}</p>
                 </div>
             </div>
-
-            <div className="additional-detail">
-                <h3 className="title">{props.title}</h3>
-                <p className="description">{props.description}</p>
+            <div id="info">
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
             </div>
-
-            <div class="clear-float"></div>
-
         </div>
     );
 }
-
 export default EventCard;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Head from "../head/Head";
 import EventCard from './eventCard/EventCard';
 import EventInFocus from './eventInFocus/EventInFocus';
@@ -9,15 +10,25 @@ import './Event.scss';
 function Event() {
     return (
         <>
-            <Head title="EVENTS" />
-
-            <div className="event">
-
-                <div className="all-events">
-                    <h2 className="header-block">ALL EVENTS</h2>
-                    <div className="event-cards">
+            <Head title="Events" />
+            <div id="event" className="grid">
+                <div id="event-focused">
+                    <EventInFocus
+                        day={EventData[0].day}
+                        date={EventData[0].date}
+                        month={EventData[0].month}
+                        year={EventData[0].year}
+                        time={EventData[0].time}
+                        title={EventData[0].title}
+                        description={EventData[0].long_description}
+                        imgSrc={EventData[0].imgSrc}
+                    />
+                </div>
+                <div id="event-all">
+                    <h2>All Events</h2>
+                    <div className="grid">
                         {
-                            EventData.slice(0, 3).map((data) => {
+                            EventData.slice(0, 4).map((data) => {
                                 return (
                                     <EventCard
                                         key={data.id}
@@ -30,24 +41,14 @@ function Event() {
                                 );
                             })
                         }
+                        <div id="add-event-btn">
+                            <Link to="/event/new"><div>
+                                <i className="fa fa-plus" ariaHidden="true"></i>
+                                <p>Add Event</p></div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
-
-                <div class="clear-float"></div>
-
-                <div className="event-selected">
-                    <EventInFocus
-                        day={EventData[0].day}
-                        date={EventData[0].date}
-                        month={EventData[0].month}
-                        year={EventData[0].year}
-                        time={EventData[0].time}
-                        title={EventData[0].title}
-                        description={EventData[0].long_description}
-                        imgSrc={EventData[0].imgSrc}
-                    />
-                </div>
-
             </div>
         </>
     );

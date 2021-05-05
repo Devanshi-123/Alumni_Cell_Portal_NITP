@@ -1,68 +1,51 @@
 @import "../../globals";
 
-.info {
+#card {
+    grid-template-columns: 1fr 2.5fr;
     cursor: pointer;
+    min-width: 350px;
 
-    .calendar {
-        @include dimension(8vw, 8vw);
-        margin: 1em 0em;
+    #calendar {
         background-color: $color_1;
         color: $color_3;
-        float: left;
+        margin-top: 1em;
         
-        .date {
-            @include dimension(55%, 100%);
-            float: left;
-            font: {
-                size: 3.6em;
-                weight: 900;
-            }
-            /* Center Horizontally & Vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5em;
+        justify-items: center;
+        align-items: center;
 
-        .month {
-            @include dimension(45%, 100%);
-            float: right;
-            font: {
-                size: 1.8em;
-                weight: 600;
+        p {
+            font-size: 3.6em;
+            font-weight: 900;
+            padding-left: 0.2em;
+        }
+        div {
+            padding-right: 0.72em;
+            p {
+                font-size: 1.6em;
+                font-weight: 600;
+                padding-left: 0;
             }
-            /* Center Horizontally & Vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
 
-    .additional-detail {
-        @include dimension(calc(100% - 8vw), 8vw);
-        margin: 1em 0;
-        padding: 0em 0.25em;
-        float: right;
+    #info {
         background-color: $color_4;
         color: $color_5;
+        margin-top: 1em;
+        padding: 0.25em 0.75em;
 
-        .title {
-            @include dimension(100%, 2vw);
+        h3 {
             font-size: 1.8em;
-            font-weight: bold;
+            font-weight: 700;
+            padding-top: 0.25em;
+            text-transform: uppercase;
         }
-
-        .description {
-            @include dimension(100%, 5.4vw);
-            // padding: 0em 0.25em;
+        p {
             font-size: 1.2em;
             line-height: 1.3em;
-            overflow: hidden;
+            padding: 0.25em 0;
         }
     }
-}
-
-.clear-float {
-    clear: both;
-    visibility: hidden;
-    height: 0;
 }
