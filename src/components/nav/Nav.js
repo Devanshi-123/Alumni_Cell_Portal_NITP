@@ -12,7 +12,7 @@ function Nav() {
                         <p className="thick">National Institute Of Technology Patna</p>
                     </Link>
                 </div>
-                <div className="col-md-2 col-4 orange-box box ">
+                <div className="col-md-1 col-2 orange-box box ">
                     <div>
                         <nav className="navbar navbar-expand">
                             <div className="collapse navbar-collapse" id="navbarNavDropdown">
@@ -32,10 +32,10 @@ function Nav() {
                         </nav>
                     </div>
                 </div>
-                <div className="col-md-2 col-4 yellow-box box">
+                <div className="col-md-1 col-2 yellow-box box">
                     <div><Link to="/auth" className="item">Register</Link></div>
                 </div>
-                <div className="col-md-2 col-4 black-box box">
+                <div className="col-md-1 col-2 black-box box">
                     <div><Link to="/" className="item">Contact Us</Link></div>
                 </div>
             </div>

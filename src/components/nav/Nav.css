@@ -13,6 +13,7 @@
 }
 .cell {
   color: #f9531e;
+ 
 }
 .thick {
   color:#000000;
@@ -22,16 +23,21 @@
 /* NAVBAR */
 .yellow-box {
   background-color: #f5b50e;
+  
 }
 .orange-box {
   background-color: #f9531e;
+  margin-left:313px;
 }
 .black-box {
   background-color: #000000;
 }
 .box {
   color: white;
-  height: 100px;
+  height: 40px;
+  width:initial;
+  
+  
   padding: 0 !important;
 
   display: flex;
