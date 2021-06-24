@@ -1,28 +1,26 @@
 .head-div {
     margin-top: 1em;
-    
-    position: absolute;
-    top: 2px;
-    left: 16px;
+}
 
-}
-.head-colorbox{
+.head-colorbox {
     width: 10px;
-    height:100px;
+    height: 100px;
     margin-left: 5%;
-    background-color:  #F9531E;
+    background-color: #F9531E;
     display: inline-block;
-    float:left;
+    float: left;
 }
-.make-inline{
+
+.make-inline {
     display: inline-block;
-    height:100px;
-    float:left;
+    height: 100px;
+    float: left;
 }
-.head-title{
+
+.head-title {
     padding-left: 15px;
     font-weight: bold;
-    color:orange;
+    color:black;
     //width: 50px;
     text-transform: uppercase;
 }

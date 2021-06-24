@@ -3,11 +3,11 @@
   border-top: 1px solid purple;
   background: black;
   color: white;
-  padding: 24px;
+  padding: 20px;
   font-family: "Lucida Console", "Courier New", monospace;
 }
 .social-footer{
-  margin-top: 20px;
+  margin-top: 0px;
   display: flex;
   justify-content: flex-end;
 }

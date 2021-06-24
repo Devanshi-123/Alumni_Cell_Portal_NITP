@@ -1,13 +1,13 @@
 import "./Stories.css";
 import React from "react";
 import Story from "./Story";
-import Head from '../head/Head';
+import Head from '../head/hds';
 
 function Stories() {
     return (
         <div>
 
-            <div>  <Head
+            <div style={{marginBottom:"80px"}}>  <Head
                 title="STORIES"
             /></div>
 

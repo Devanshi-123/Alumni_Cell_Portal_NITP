@@ -1,151 +1,35 @@
 
-
-.bar{
-  position: absolute;
-  width: 800px;
-  height: 300px;
-  left: 220px;
-  top: 200px;
-
-  background: rgba(211, 201, 181, 0.3);
-  mix-blend-mode: normal;
-}
-
-.sidebar{
-position: absolute;
-width: 10px;
-height: 85px;
-left: 113px;
-top: 150px;
-transform-style: rotate(90deg);
-background: #EF2626;
-}
-
-/* About Us */
-.about{
-position: absolute;
-width: 277px;
-height: 52px;
-left: 130px;
-top: 150px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 23px;
-line-height: 72px;
-
-color: #000000;
-
-}
-
-
-
-
-
-/* Dr. Kamini Sinha */
-.kam{
-position: absolute;
-width: 237px;
-height: 45px;
-left: 450px;
-top: 390px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 45px;
-
-/* identical to box height */
-
-text-align: right;
-
-color: #000000;
-}
-
-
-/* Dr. Sanjay Kumar */
-.san{
-position: absolute;
-width: 252px;
-height: 45px;
-left: 630px;
-top: 390px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 45px;
-
-/* identical to box height */
-
-text-align: right;
-
-color: #000000;
-}
-
-
-/* Rectangle 7 */
-.dnb{
-position: absolute;
-width: 180px;
-height: 25px;
-left: 120px;
-top: 415px;
-
-background: #F9531E;
-
-}
 /* Dean Office */
 .dean{
-position: absolute;
-width: 311px;
-height: 45px;
-left: 62px;
-top: 405px;
 
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 45px;
 
-/* identical to box height */
+}
 
-text-align: center;
-
-color: white;
+.studs {
+    width: 311px;
+    
+  
+    background-color: orange;
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    
+    padding-bottom: 50px;
+    /* identical to box height */
+    text-align: center;
+    color: black;
 }
 
 
-/* Ellipse 1 */
-.pb1{
-position: absolute;
-width: 120px;
-height: 120px;
-left: 580px;
-top: 270px;
-border-radius: 50%;
-
-background: #FFFBFB;
+.prof {
+    margin-top: 80px;
+    float: left;
+    width: 50%;
+  
 }
-
-/* Ellipse 2 */
-.pb2{
-position: absolute;
-width: 120px;
-height: 120px;
-left: 770px;
-top: 270px;
-border-radius: 50%;
-
-background: #FFFBFB;
+.stud {
+    margin-top: 80px;
+    float: left;
+    width: 33%;
 }
-// .whole{
-//   position: absolute;
-//   width:800px;
-//   height:400px;
-//   left:100px;
-// }

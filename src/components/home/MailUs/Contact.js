@@ -35,34 +35,36 @@ const Contact = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <h1>Contact Us 🤳</h1>
-
-      <label>Name</label>
+        
       <input
-        placeholder="Name"
+        placeholder="Your Name"
+          
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
-      <label>Email</label>
+      
       <input
-        placeholder="Email"
+              placeholder="Your Email"
+              className="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      <label>Message</label>
+      
       <textarea
-        placeholder="Message"
+              placeholder="Your Message"
+              className="msg"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
 
       <button
-        type="submit"
-        style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
+              type="submit"
+              className="submit"
+        style={{ background: loader ? "#ccc" : "black", borderRadius:"20px 20px 20px 20px" }}
       >
-        Submit
+        SUBMIT
       </button>
     </form>
   );

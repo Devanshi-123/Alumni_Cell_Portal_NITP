@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import SignIn from './signIn/SignIn';
 import SignUp from './signUp/SignUp';
-import Head from "../head/Head";
+import Head from "../head/hds";
 import { auth } from '../../helper/Firebase';
 import './Auth.scss';
 import { useHistory } from 'react-router-dom';
