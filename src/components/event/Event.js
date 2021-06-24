@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Head from "../head/Head";
+import Head from "../head/hds";
 import EventCard from './eventCard/EventCard';
 import EventInFocus from './eventInFocus/EventInFocus';
 import EventData from './eventData/EventData';
@@ -11,7 +11,7 @@ function Event() {
     return (
         <>
             <Head title="Events" />
-            <div id="event" className="grid">
+            <div id="event" className="grid" style={{marginTop:"100px"}}>
                 <div id="event-focused">
                     <EventInFocus
                         day={EventData[0].day}

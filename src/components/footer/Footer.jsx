@@ -7,9 +7,9 @@ import instagram_icon from "../../assets/instagram_icon.png";
 import linkin_logo from "../../assets/linkin_logo.png";
 function Footer() {
   return (
-    <div className="homepage-footer" id="homepage-footer" style={{marginTop:'1rem'}}>
+    <div className="homepage-footer" id="homepage-footer" style={{marginTop:'1rem', fontFamily:"sans-serif"}}>
       <div className="footer2">
-        <p className="ff4">
+              <p className="ff4" style={{fontFamily:"Calibri"}}>
            &copy; ALUMNI <span className="ff5"> CELL</span> 
           
         </p>

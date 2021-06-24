@@ -1,17 +1,21 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./Nav.css"
+import image1 from '../../assets/nitlogo.png';
 
 function Nav() {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-md-6 col-12 logo">
+                <div className="col-md-5 col-10 logo">
                     <Link to="/">
                         <h1 className="thicker">ALUMNI <span className="cell">CELL</span></h1>
                         <p className="thick">National Institute Of Technology Patna</p>
                     </Link>
                 </div>
+                <div className="logo">
+                    <img src={image1} style={{height:"90px",width:"90px"}}/>
+                    </div>
                 <div className="col-md-1 col-2 orange-box box ">
                     <div>
                         <nav className="navbar navbar-expand">
