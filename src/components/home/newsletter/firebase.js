@@ -6,14 +6,13 @@ import "firebase/firestore";
 // const firebaseConfig = {
   try {
     firebase.initializeApp({
-      apiKey: "AIzaSyBECF4zNEyAXp2B2zsgiETV7UvnEkwH_-Y",
-      authDomain: "alumni-portal-nitp.firebaseapp.com",
-      databaseURL: "https://alumni-portal-nitp-default-rtdb.firebaseio.com",
-      projectId: "alumni-portal-nitp",
-      storageBucket: "alumni-portal-nitp.appspot.com",
-      messagingSenderId: "538390607133",
-      appId: "1:538390607133:web:2ca5c958ad24b081645df4",
-      measurementId: "G-0P5Y4B74ZY"
+      apiKey: "AIzaSyAINYnF6jMA7_WFV5-_fE0QIFHY-m66cOg",
+      authDomain: "alumni4-977cb.firebaseapp.com",
+      projectId: "alumni4-977cb",
+      storageBucket: "alumni4-977cb.appspot.com",
+      messagingSenderId: "694650517891",
+      appId: "1:694650517891:web:28f20192c900f584765eb6",
+      measurementId: "G-P4GNKZN4MZ"
     })
   } catch(err) {
     // we skip the "already exists" message which is
