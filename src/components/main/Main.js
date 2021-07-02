@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import './Main.scss';
 import { auth } from '../../helper/Firebase';
 import { useHistory } from 'react-router-dom';
-
+import Home from '../home/Home.js';
 function Main() {
     useEffect(() => {
         auth.onAuthStateChanged(user => {
@@ -22,6 +22,8 @@ function Main() {
 
     return (
         <div className='main'>
+
+            
             <h1>Hey there, you're logged in!</h1>
             <button onClick={logOut}>Log out</button>
         </div>
